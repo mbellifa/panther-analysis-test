@@ -1,0 +1,24 @@
+version: 2.1
+jobs:
+  upload:
+    docker:
+      - image: 'circleci/python:3.10'
+    steps:
+      - checkout
+      - run:
+          name: Setup the Virtual Environment and install dependencies
+          command: make venv
+      - run:
+          name: upload to internal security
+          command:  |
+            PANTHER_API_HOST=$INTERNAL_API_HOST \
+            PANTHER_API_TOKEN=$INTERNAL_API_TOKEN \
+            echo pipenv run -- panther_analysis_tool upload --filter Enabled=true
+workflows:
+  panther:
+    jobs:
+      - upload:
+          filters:
+            branches:
+              only:
+                - main
