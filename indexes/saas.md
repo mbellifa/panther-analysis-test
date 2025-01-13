@@ -1,93 +1,208 @@
-## 1Password
+## Box
 
-[ Unusual 1Password Client Detected](../rules/onepassword_rules/onepassword_unusual_client.py)
+- [Box Access Granted](../rules/box_rules/box_access_granted.yml)
+- [Box Content Workflow Policy Violation](../rules/box_rules/box_policy_violation.yml)
+- [Box event triggered by unknown or external user](../rules/box_rules/box_event_triggered_externally.yml)
+- [Box item shared externally](../rules/box_rules/box_item_shared_externally.yml)
+- [Box Large Number of Downloads](../rules/box_rules/box_user_downloads.yml)
+- [Box Large Number of Permission Changes](../rules/box_rules/box_user_permission_updates.yml)
+- [Box New Login](../rules/box_rules/box_new_login.yml)
+- [Box Shield Detected Anomalous Download Activity](../rules/box_rules/box_anomalous_download.yml)
+- [Box Shield Suspicious Alert Triggered](../rules/box_rules/box_suspicious_login_or_session.yml)
+- [Box Untrusted Device Login](../rules/box_rules/box_untrusted_device.yml)
+- [Brute Force By IP](../rules/standard_rules/brute_force_by_ip.yml)
+- [Malicious Content Detected](../rules/box_rules/box_malicious_content.yml)
+- [Sign In from Rogue State](../rules/standard_rules/sign_in_from_rogue_state.yml)
 
-[ BETA - Sensitive 1Password Item Accessed](../rules/onepassword_rules/onepassword_lut_sensitive_item_access.py)
 
-[ Configuration Required - Sensitive 1Password Item Accessed](../rules/onepassword_rules/onepassword_sensitive_item_access.py)
+## Dropbox
 
-## Gravitational Teleport
+- [Dropbox Admin sign-in-as Session](../rules/dropbox_rules/dropbox_admin_sign_in_as_session.yml)
+- [Dropbox Document/Folder Ownership Transfer](../rules/dropbox_rules/dropbox_ownership_transfer.yml)
+- [Dropbox External Share](../rules/dropbox_rules/dropbox_external_share.yml)
+- [Dropbox Linked Team Application Added](../rules/dropbox_rules/dropbox_linked_team_application_added.yml)
+- [Dropbox Many Deletes](../queries/dropbox_queries/Dropbox_Many_Deletes_Query.yml)
+- [Dropbox Many Downloads](../queries/dropbox_queries/Dropbox_Many_Downloads_Query.yml)
+- [Dropbox User Disabled 2FA](../rules/dropbox_rules/dropbox_user_disabled_2fa.yml)
 
-[ Teleport Suspicious Commands Executed](../rules/gravitational_teleport_rules/teleport_suspicious_commands.py)
 
-[ Teleport SSH Auth Errors](../rules/gravitational_teleport_rules/teleport_auth_errors.py)
+## Google Workspace
 
-[ Teleport Create User Accounts](../rules/gravitational_teleport_rules/teleport_create_user_accounts.py)
+- [Admin Role Assigned](../rules/standard_rules/admin_assigned.yml)
+- [Brute Force By IP](../rules/standard_rules/brute_force_by_ip.yml)
+- [External GSuite File Share](../rules/gsuite_reports_rules/gsuite_drive_external_share.yml)
+- [Google Accessed a GSuite Resource](../rules/gsuite_activityevent_rules/gsuite_google_access.yml)
+- [Google Drive High Download Count](../queries/gsuite_queries/gsuite_drive_many_docs_downloaded.yml)
+- [Google Workspace Admin Custom Role](../rules/gsuite_activityevent_rules/google_workspace_admin_custom_role.yml)
+- [Google Workspace Advanced Protection Program](../rules/gsuite_activityevent_rules/google_workspace_advanced_protection_program.yml)
+- [Google Workspace Apps Marketplace Allowlist](../rules/gsuite_activityevent_rules/google_workspace_apps_marketplace_allowlist.yml)
+- [Google Workspace Apps Marketplace New Domain Application](../rules/gsuite_activityevent_rules/google_workspace_apps_marketplace_new_domain_application.yml)
+- [Google Workspace Apps New Mobile App Installed](../rules/gsuite_activityevent_rules/google_workspace_apps_new_mobile_app_installed.yml)
+- [GSuite Calendar Has Been Made Public](../rules/gsuite_activityevent_rules/gsuite_calendar_made_public.yml)
+- [GSuite Device Suspicious Activity](../rules/gsuite_activityevent_rules/gsuite_mobile_device_suspicious_activity.yml)
+- [GSuite Document External Ownership Transfer](../rules/gsuite_activityevent_rules/gsuite_doc_ownership_transfer.yml)
+- [GSuite Drive Many Documents Deleted](../queries/gsuite_queries/gsuite_drive_many_docs_deleted.yml)
+- [GSuite External Drive Document](../rules/gsuite_reports_rules/gsuite_drive_visibility_change.yml)
+- [GSuite Government Backed Attack](../rules/gsuite_activityevent_rules/gsuite_gov_attack.yml)
+- [GSuite Login Type](../rules/gsuite_activityevent_rules/gsuite_login_type.yml)
+- [Gsuite Mail forwarded to external domain](../rules/gsuite_activityevent_rules/gsuite_external_forwarding.yml)
+- [GSuite Many Docs Deleted Query](../queries/gsuite_queries/GSuite_Many_Docs_Deleted_Query.yml)
+- [GSuite Many Docs Downloaded Query](../queries/gsuite_queries/GSuite_Many_Docs_Downloaded_Query.yml)
+- [GSuite Overly Visible Drive Document](../rules/gsuite_reports_rules/gsuite_drive_overly_visible.yml)
+- [GSuite Passthrough Rule Triggered](../rules/gsuite_activityevent_rules/gsuite_passthrough_rule.yml)
+- [GSuite User Advanced Protection Change](../rules/gsuite_activityevent_rules/gsuite_advanced_protection.yml)
+- [GSuite User Banned from Group](../rules/gsuite_activityevent_rules/gsuite_group_banned_user.yml)
+- [GSuite User Device Compromised](../rules/gsuite_activityevent_rules/gsuite_mobile_device_compromise.yml)
+- [GSuite User Device Unlock Failures](../rules/gsuite_activityevent_rules/gsuite_mobile_device_screen_unlock_fail.yml)
+- [GSuite User Password Leaked](../rules/gsuite_activityevent_rules/gsuite_leaked_password.yml)
+- [GSuite User Suspended](../rules/gsuite_activityevent_rules/gsuite_user_suspended.yml)
+- [GSuite User Two Step Verification Change](../rules/gsuite_activityevent_rules/gsuite_two_step_verification.yml)
+- [GSuite Workspace Calendar External Sharing Setting Change](../rules/gsuite_activityevent_rules/gsuite_workspace_calendar_external_sharing.yml)
+- [GSuite Workspace Data Export Has Been Created](../rules/gsuite_activityevent_rules/gsuite_workspace_data_export_created.yml)
+- [GSuite Workspace Gmail Default Routing Rule Modified](../rules/gsuite_activityevent_rules/gsuite_workspace_gmail_default_routing_rule.yml)
+- [GSuite Workspace Gmail Pre-Delivery Message Scanning Disabled](../rules/gsuite_activityevent_rules/gsuite_workspace_gmail_enhanced_predelivery_scanning.yml)
+- [GSuite Workspace Gmail Security Sandbox Disabled](../rules/gsuite_activityevent_rules/gsuite_workspace_gmail_security_sandbox_disabled.yml)
+- [GSuite Workspace Password Reuse Has Been Enabled](../rules/gsuite_activityevent_rules/gsuite_workspace_password_reuse_enabled.yml)
+- [GSuite Workspace Strong Password Enforcement Has Been Disabled](../rules/gsuite_activityevent_rules/gsuite_workspace_password_enforce_strong_disabled.yml)
+- [GSuite Workspace Trusted Domain Allowlist Modified](../rules/gsuite_activityevent_rules/gsuite_workspace_trusted_domains_allowlist.yml)
+- [Suspicious GSuite Login](../rules/gsuite_activityevent_rules/gsuite_suspicious_logins.yml)
 
-[ Teleport Scheduled Jobs](../rules/gravitational_teleport_rules/teleport_scheduled_jobs.py)
 
-[ Teleport Network Scan Initiated](../rules/gravitational_teleport_rules/teleport_network_scanning.py)
+## Okta
 
-[ Teleport Suspicious Commands Executed](../rules/gravitational_teleport_rules/teleport_suspicious_commands.py)
+- [AWS Console Sign-In NOT PRECEDED BY Okta Redirect](../correlation_rules/aws_console_sign-in_without_okta.yml)
+- [Brute Force By IP](../rules/standard_rules/brute_force_by_ip.yml)
+- [Impossible Travel for Login Action](../rules/standard_rules/impossible_travel_login.yml)
+- [MFA Disabled](../rules/standard_rules/mfa_disabled.yml)
+- [Okta Admin Access Granted](../queries/okta_queries/okta_admin_access_granted.yml)
+- [Okta Admin Role Assigned](../rules/okta_rules/okta_admin_role_assigned.yml)
+- [Okta AiTM Phishing Attempt Blocked by FastPass](../rules/okta_rules/okta_phishing_attempt_blocked_by_fastpass.yml)
+- [Okta API Key Created](../rules/okta_rules/okta_api_key_created.yml)
+- [Okta API Key Revoked](../rules/okta_rules/okta_api_key_revoked.yml)
+- [Okta App Refresh Access Token Reuse](../rules/okta_rules/okta_app_refresh_access_token_reuse.yml)
+- [Okta App Unauthorized Access Attempt](../rules/okta_rules/okta_app_unauthorized_access_attempt.yml)
+- [Okta Cleartext Passwords Extracted via SCIM Application](../rules/okta_rules/okta_password_extraction_via_scim.yml)
+- [Okta Group Admin Role Assigned](../rules/okta_rules/okta_group_admin_role_assigned.yml)
+- [Okta HAR File IOCs](../queries/okta_queries/okta_harfile_iocs.yml)
+- [Okta Identity Provider Created or Modified](../rules/okta_rules/okta_idp_create_modify.yml)
+- [Okta Identity Provider Sign-in](../rules/okta_rules/okta_idp_signin.yml)
+- [Okta Investigate MFA and Password resets](../queries/okta_queries/okta_mfa_password_reset_audit.yml)
+- [Okta Investigate Session ID Activity](../queries/okta_queries/okta_session_id_audit.yml)
+- [Okta Investigate User Activity](../queries/okta_queries/okta_activity_audit.yml)
+- [Okta Login From CrowdStrike Unmanaged Device](../queries/crowdstrike_queries/Okta_Login_From_CrowdStrike_Unmanaged_Device.yml)
+- [Okta Login From CrowdStrike Unmanaged Device (crowdstrike_fdrevent table)](../queries/okta_queries/Okta_Login_From_CrowdStrike_Unmanaged_Device_FDREvent.yml)
+- [Okta MFA Globally Disabled](../rules/okta_rules/okta_admin_disabled_mfa.yml)
+- [Okta New Behaviors Acessing Admin Console](../rules/okta_rules/okta_new_behavior_accessing_admin_console.yml)
+- [Okta Org2Org application created of modified](../rules/okta_rules/okta_org2org_creation_modification.yml)
+- [Okta Password Accessed](../rules/okta_rules/okta_password_accessed.yml)
+- [Okta Potentially Stolen Session](../rules/okta_rules/okta_potentially_stolen_session.yml)
+- [Okta Rate Limits](../rules/okta_rules/okta_rate_limits.yml)
+- [Okta Sign-In from VPN Anonymizer](../rules/okta_rules/okta_anonymizing_vpn_login.yml)
+- [Okta Support Access](../queries/okta_queries/okta_support_access.yml)
+- [Okta Support Access Granted](../rules/okta_rules/okta_account_support_access.yml)
+- [Okta Support Reset Credential](../rules/okta_rules/okta_support_reset.yml)
+- [Okta ThreatInsight Security Threat Detected](../rules/okta_rules/okta_threatinsight_security_threat_detected.yml)
+- [Okta User Account Locked](../rules/okta_rules/okta_user_account_locked.yml)
+- [Okta User MFA Factor Suspend](../rules/okta_rules/okta_user_mfa_factor_suspend.yml)
+- [Okta User MFA Own Reset](../rules/okta_rules/okta_user_mfa_reset.yml)
+- [Okta User MFA Reset All](../rules/okta_rules/okta_user_mfa_reset_all.yml)
+- [Okta User Reported Suspicious Activity](../rules/okta_rules/okta_user_reported_suspicious_activity.yml)
+- [Okta Username Above 52 Characters Security Advisory](../queries/okta_queries/okta_52_char_username_threat_hunt.yml)
+- [Sign In from Rogue State](../rules/standard_rules/sign_in_from_rogue_state.yml)
 
-[ Teleport SSH Auth Errors](../rules/gravitational_teleport_rules/teleport_auth_errors.py)
 
-[ Teleport Create User Accounts](../rules/gravitational_teleport_rules/teleport_create_user_accounts.py)
+## OneLogin
 
-[ Teleport Scheduled Jobs](../rules/gravitational_teleport_rules/teleport_scheduled_jobs.py)
+- [Admin Role Assigned](../rules/standard_rules/admin_assigned.yml)
+- [Brute Force By IP](../rules/standard_rules/brute_force_by_ip.yml)
+- [New User Account Created](../rules/indicator_creation_rules/new_user_account_logging.yml)
+- [OneLogin Active Login Activity](../rules/onelogin_rules/onelogin_active_login_activity.yml)
+- [OneLogin Authentication Factor Removed](../rules/onelogin_rules/onelogin_remove_authentication_factor.yml)
+- [OneLogin Failed High Risk Login](../rules/onelogin_rules/onelogin_high_risk_failed_login.yml)
+- [OneLogin High Risk Failed Login FOLLOWED BY Successful Login](../correlation_rules/onelogin_successful_login_after_high_risk_failed_login.yml)
+- [OneLogin Multiple Accounts Deleted](../rules/onelogin_rules/onelogin_threshold_accounts_deleted.yml)
+- [OneLogin Multiple Accounts Modified](../rules/onelogin_rules/onelogin_threshold_accounts_modified.yml)
+- [OneLogin Password Access](../rules/onelogin_rules/onelogin_password_accessed.yml)
+- [OneLogin Unauthorized Access](../rules/onelogin_rules/onelogin_unauthorized_access.yml)
+- [OneLogin User Assumed Another User](../rules/onelogin_rules/onelogin_user_assumed.yml)
+- [OneLogin User Locked](../rules/onelogin_rules/onelogin_user_account_locked.yml)
+- [OneLogin User Password Changed](../rules/onelogin_rules/onelogin_password_changed.yml)
+- [Sign In from Rogue State](../rules/standard_rules/sign_in_from_rogue_state.yml)
 
-[ Teleport Network Scan Initiated](../rules/gravitational_teleport_rules/teleport_network_scanning.py)
+
+## Salesforce
+
+- [Salesforce Admin Login As User](../rules/salesforce_rules/salesforce_admin_login_as_user.yml)
+
+
+## Slack
+
+- [Slack Anomaly Detected](../rules/slack_rules/slack_passthrough_anomaly.yml)
+- [Slack App Access Expanded](../rules/slack_rules/slack_app_access_expanded.yml)
+- [Slack App Added](../rules/slack_rules/slack_app_added.yml)
+- [Slack App Removed](../rules/slack_rules/slack_app_removed.yml)
+- [Slack Denial of Service](../rules/slack_rules/slack_application_dos.yml)
+- [Slack DLP Modified](../rules/slack_rules/slack_dlp_modified.yml)
+- [Slack EKM Config Changed](../rules/slack_rules/slack_ekm_config_changed.yml)
+- [Slack EKM Slackbot Unenrolled](../rules/slack_rules/slack_ekm_slackbot_unenrolled.yml)
+- [Slack EKM Unenrolled](../rules/slack_rules/slack_ekm_unenrolled.yml)
+- [Slack IDP Configuration Changed](../rules/slack_rules/slack_idp_configuration_change.yml)
+- [Slack Information Barrier Modified](../rules/slack_rules/slack_information_barrier_modified.yml)
+- [Slack Intune MDM Disabled](../rules/slack_rules/slack_intune_mdm_disabled.yml)
+- [Slack Legal Hold Policy Modified](../rules/slack_rules/slack_legal_hold_policy_modified.yml)
+- [Slack MFA Settings Changed](../rules/slack_rules/slack_mfa_settings_changed.yml)
+- [Slack Organization Created](../rules/slack_rules/slack_org_created.yml)
+- [Slack Organization Deleted](../rules/slack_rules/slack_org_deleted.yml)
+- [Slack Potentially Malicious File Shared](../rules/slack_rules/slack_potentially_malicious_file_shared.yml)
+- [Slack Private Channel Made Public](../rules/slack_rules/slack_private_channel_made_public.yml)
+- [Slack Service Owner Transferred](../rules/slack_rules/slack_service_owner_transferred.yml)
+- [Slack SSO Settings Changed](../rules/slack_rules/slack_sso_settings_changed.yml)
+- [Slack User Privilege Escalation](../rules/slack_rules/slack_user_privilege_escalation.yml)
+- [Slack User Privileges Changed to User](../rules/slack_rules/slack_privilege_changed_to_user.yml)
+
+
+## Teleport
+
+- [A long-lived cert was created](../rules/gravitational_teleport_rules/teleport_long_lived_certs.yml)
+- [A SAML Connector was created or modified](../rules/gravitational_teleport_rules/teleport_saml_created.yml)
+- [A Teleport Lock was created](../rules/gravitational_teleport_rules/teleport_lock_created.yml)
+- [A Teleport Role was modified or created](../rules/gravitational_teleport_rules/teleport_role_created.yml)
+- [A user authenticated with SAML, but from an unknown company domain](../rules/gravitational_teleport_rules/teleport_saml_login_not_company_domain.yml)
+- [A User from the company domain(s) Logged in without SAML](../rules/gravitational_teleport_rules/teleport_company_domain_login_without_saml.yml)
+- [Teleport Create User Accounts](../rules/gravitational_teleport_rules/teleport_create_user_accounts.yml)
+- [Teleport Network Scan Initiated](../rules/gravitational_teleport_rules/teleport_network_scanning.yml)
+- [Teleport Scheduled Jobs](../rules/gravitational_teleport_rules/teleport_scheduled_jobs.yml)
+- [Teleport SSH Auth Errors](../rules/gravitational_teleport_rules/teleport_auth_errors.yml)
+- [Teleport Suspicious Commands Executed](../rules/gravitational_teleport_rules/teleport_suspicious_commands.yml)
+- [User Logged in as root](../rules/gravitational_teleport_rules/teleport_root_login.yml)
+- [User Logged in wihout MFA](../rules/gravitational_teleport_rules/teleport_local_user_login_without_mfa.yml)
+
 
 ## Zendesk
 
-[ Zendesk User Suspension Status Changed](../rules/zendesk_rules/zendesk_user_suspension.py)
+- [Admin Role Assigned](../rules/standard_rules/admin_assigned.yml)
+- [Enabled Zendesk Support to Assume Users](../rules/zendesk_rules/zendesk_user_assumption.yml)
+- [MFA Disabled](../rules/standard_rules/mfa_disabled.yml)
+- [Sign In from Rogue State](../rules/standard_rules/sign_in_from_rogue_state.yml)
+- [Zendesk Account Owner Changed](../rules/zendesk_rules/zendesk_new_owner.yml)
+- [Zendesk API Token Created](../rules/zendesk_rules/zendesk_new_api_token.yml)
+- [Zendesk Credit Card Redaction Off](../rules/zendesk_rules/zendesk_sensitive_data_redaction.yml)
+- [Zendesk Mobile App Access Modified](../rules/zendesk_rules/zendesk_mobile_app_access.yml)
+- [Zendesk User Role Changed](../rules/zendesk_rules/zendesk_user_role.yml)
+- [Zendesk User Suspension Status Changed](../rules/zendesk_rules/zendesk_user_suspension.yml)
 
-[ Zendesk Account Owner Changed](../rules/zendesk_rules/zendesk_new_owner.py)
-
-[ Zendesk User Role Changed](../rules/zendesk_rules/zendesk_user_role.py)
-
-[ Zendesk Mobile App Access Modified](../rules/zendesk_rules/zendesk_mobile_app_access.py)
-
-[ Zendesk Credit Card Redaction Off](../rules/zendesk_rules/zendesk_sensitive_data_redaction.py)
-
-[ Zendesk API Token Created](../rules/zendesk_rules/zendesk_new_api_token.py)
-
-[ Enabled Zendesk Support to Assume Users](../rules/zendesk_rules/zendesk_user_assumption.py)
-
-[ Zendesk User Suspension Status Changed](../rules/zendesk_rules/zendesk_user_suspension.py)
-
-[ Zendesk Account Owner Changed](../rules/zendesk_rules/zendesk_new_owner.py)
-
-[ Zendesk User Role Changed](../rules/zendesk_rules/zendesk_user_role.py)
-
-[ Zendesk Mobile App Access Modified](../rules/zendesk_rules/zendesk_mobile_app_access.py)
-
-[ Zendesk Credit Card Redaction Off](../rules/zendesk_rules/zendesk_sensitive_data_redaction.py)
-
-[ Zendesk API Token Created](../rules/zendesk_rules/zendesk_new_api_token.py)
-
-[ Enabled Zendesk Support to Assume Users](../rules/zendesk_rules/zendesk_user_assumption.py)
 
 ## Zoom
 
-[ Zoom User Granted Admin Rights](../rules/zoom_operation_rules/zoom_operation_user_granted_admin.py)
+- [New User Account Created](../rules/indicator_creation_rules/new_user_account_logging.yml)
+- [Sign In from Rogue State](../rules/standard_rules/sign_in_from_rogue_state.yml)
+- [Zoom All Meetings Secured With One Option Disabled](../rules/zoom_operation_rules/zoom_all_meetings_secured_with_one_option_disabled.yml)
+- [Zoom Automatic Sign Out Disabled](../rules/zoom_operation_rules/zoom_automatic_sign_out_disabled.yml)
+- [Zoom Meeting Passcode Disabled](../rules/zoom_operation_rules/zoom_operation_passcode_disabled.yml)
+- [Zoom New Meeting Passcode Required Disabled](../rules/zoom_operation_rules/zoom_new_meeting_passcode_required_disabled.yml)
+- [Zoom Sign In Method Modified](../rules/zoom_operation_rules/zoom_sign_in_method_modified.yml)
+- [Zoom Sign In Requirements Changed](../rules/zoom_operation_rules/zoom_sign_in_requirements_changed.yml)
+- [Zoom Two Factor Authentication Disabled](../rules/zoom_operation_rules/zoom_two_factor_authentication_disabled.yml)
+- [Zoom User Promoted to Privileged Role](../rules/zoom_operation_rules/zoom_user_promoted_to_privileged_role.yml)
 
-[ Zoom Meeting Passcode Disabled](../rules/zoom_operation_rules/zoom_operation_passcode_disabled.py)
 
-[ Zoom User Granted Admin Rights](../rules/zoom_operation_rules/zoom_operation_user_granted_admin.py)
-
-[ Zoom Meeting Passcode Disabled](../rules/zoom_operation_rules/zoom_operation_passcode_disabled.py)
-
-## Box
-
-[ Box Access Granted](../rules/box_rules/box_access_granted.py)
-
-[ Box Content Workflow Policy Violation](../rules/box_rules/box_policy_violation.py)
-
-[ Box Large Number of Downloads](../rules/box_rules/box_user_downloads.py)
-
-[ Box Large Number of Permission Changes](../rules/box_rules/box_user_permission_updates.py)
-
-[ Box New Login](../rules/box_rules/box_new_login.py)
-
-[ Box Shield Detected Anomalous Download Activity](../rules/box_rules/box_anomalous_download.py)
-
-[ Box Shield Suspicious Alert Triggered](../rules/box_rules/box_suspicious_login_or_session.py)
-
-[ Box Untrusted Device Login](../rules/box_rules/box_untrusted_device.py)
-
-[ Box event triggered by unknown or external user](../rules/box_rules/box_event_triggered_externally.py)
-
-[ Box item shared externally](../rules/box_rules/box_item_shared_externally.py)
-
-[ Malicious Content Detected](../rules/box_rules/box_malicious_content.py)
