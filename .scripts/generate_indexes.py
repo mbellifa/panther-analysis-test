@@ -295,7 +295,7 @@ def write_alpha_index(detections, query_lookup, logtype_lookup, root_dir):
                 logtype_mapping[log_type] = []
             logtype_mapping[log_type].append(winner)
         if 'standard_rules' in winner['YAMLPath']:
-            winner['Headings'] = headings
+            winner['Headings'] = list(sorted(headings))
             standard_rules.append(winner)
         json_export.append(name_map[name][0])
 
