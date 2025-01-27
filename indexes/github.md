@@ -1,35 +1,30 @@
-## User Rules
+## GitHub
 
-[ GitHub User Role Updated](../rules/github_rules/github_user_role_updated.py)
+- [Admin Role Assigned](../rules/standard_rules/admin_assigned.yml)
+- [GitHub Action Failed](../rules/github_rules/github_action_failed.yml)
+- [GitHub Advanced Security Change WITHOUT Repo Archived](../correlation_rules/github_advanced_security_change_not_followed_by_repo_archived.yml)
+- [GitHub Branch Protection Disabled](../rules/github_rules/github_branch_protection_disabled.yml)
+- [GitHub Branch Protection Policy Override](../rules/github_rules/github_branch_policy_override.yml)
+- [GitHub Dependabot Vulnerability Dismissed](../rules/github_rules/github_repo_vulnerability_dismissed.yml)
+- [GitHub Org Authentication Method Changed](../rules/github_rules/github_org_auth_modified.yml)
+- [GitHub Org IP Allow List modified](../rules/github_rules/github_org_ip_allowlist.yml)
+- [Github Organization App Integration Installed](../rules/github_rules/github_organization_app_integration_installed.yml)
+- [Github Public Repository Created](../rules/github_rules/github_public_repository_created.yml)
+- [GitHub Repository Archived](../rules/github_rules/github_repo_archived.yml)
+- [GitHub Repository Collaborator Change](../rules/github_rules/github_repo_collaborator_change.yml)
+- [GitHub Repository Created](../rules/github_rules/github_repo_created.yml)
+- [Github Repository Transfer](../rules/github_rules/github_repository_transfer.yml)
+- [GitHub Repository Visibility Change](../rules/github_rules/github_repo_visibility_change.yml)
+- [GitHub Secret Scanning Alert Created](../rules/github_rules/github_secret_scanning_alert_created.yml)
+- [GitHub Security Change, includes GitHub Advanced Security](../rules/github_rules/github_advanced_security_change.yml)
+- [GitHub Team Modified](../rules/github_rules/github_team_modified.yml)
+- [GitHub User Access Key Created](../rules/github_rules/github_user_access_key_created.yml)
+- [GitHub User Added or Removed from Org](../rules/github_rules/github_org_modified.yml)
+- [GitHub User Added to Org Moderators](../rules/github_rules/github_org_moderators_add.yml)
+- [GitHub User Initial Access to Private Repo](../rules/github_rules/github_repo_initial_access.yml)
+- [GitHub User Role Updated](../rules/github_rules/github_user_role_updated.yml)
+- [GitHub Web Hook Modified](../rules/github_rules/github_webhook_modified.yml)
+- [MFA Disabled](../rules/standard_rules/mfa_disabled.yml)
+- [Secret Exposed and not Quarantined](../correlation_rules/secret_exposed_and_not_quarantined.yml)
 
-[ GitHub Team Modified](../rules/github_rules/github_team_modified.py)
 
-[ GitHub User Initial Access to Private Repo](../rules/github_rules/github_repo_initial_access.py)
-
-[ GitHub Team Modified](../rules/github_rules/github_team_modified.py)
-
-[ GitHub User Initial Access to Private Repo](../rules/github_rules/github_repo_initial_access.py)
-
-[ GitHub User Added or Removed from Org](../rules/github_rules/github_org_modified.py)
-
-[ GitHub User Access Key Created](../rules/github_rules/github_user_access_key_created.py)
-
-## Repository Rules
-
-[ GitHub Branch Protection Policy Override](../rules/github_rules/github_branch_policy_override.py)
-
-[ GitHub Branch Protection Disabled](../rules/github_rules/github_branch_protection_disabled.py)
-
-[ GitHub Repository Created](../rules/github_rules/github_repo_created.py)
-
-[ GitHub Repository Collaborator Change](../rules/github_rules/github_repo_collaborator_change.py)
-
-[ GitHub Web Hook Modified](../rules/github_rules/github_repo_hook_modified.py)
-
-[ GitHub Repository Visibility Change](../rules/github_rules/github_repo_visibility_change.py)
-
-## Organization Rules
-
-[ GitHub Org Authentication Method Changed](../rules/github_rules/github_org_auth_modified.py)
-
-[ GitHub Org IP Allow List modified](../rules/github_rules/github_org_ip_allowlist.py)

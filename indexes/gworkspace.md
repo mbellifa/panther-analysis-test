@@ -1,45 +1,42 @@
-## Drive and Docs
+## Google Workspace
 
-[ External GSuite File Share](../rules/gsuite_reports_rules/gsuite_drive_external_share.py)
+- [Admin Role Assigned](../rules/standard_rules/admin_assigned.yml)
+- [Brute Force By IP](../rules/standard_rules/brute_force_by_ip.yml)
+- [External GSuite File Share](../rules/gsuite_reports_rules/gsuite_drive_external_share.yml)
+- [Google Accessed a GSuite Resource](../rules/gsuite_activityevent_rules/gsuite_google_access.yml)
+- [Google Drive High Download Count](../queries/gsuite_queries/gsuite_drive_many_docs_downloaded.yml)
+- [Google Workspace Admin Custom Role](../rules/gsuite_activityevent_rules/google_workspace_admin_custom_role.yml)
+- [Google Workspace Advanced Protection Program](../rules/gsuite_activityevent_rules/google_workspace_advanced_protection_program.yml)
+- [Google Workspace Apps Marketplace Allowlist](../rules/gsuite_activityevent_rules/google_workspace_apps_marketplace_allowlist.yml)
+- [Google Workspace Apps Marketplace New Domain Application](../rules/gsuite_activityevent_rules/google_workspace_apps_marketplace_new_domain_application.yml)
+- [Google Workspace Apps New Mobile App Installed](../rules/gsuite_activityevent_rules/google_workspace_apps_new_mobile_app_installed.yml)
+- [GSuite Calendar Has Been Made Public](../rules/gsuite_activityevent_rules/gsuite_calendar_made_public.yml)
+- [GSuite Device Suspicious Activity](../rules/gsuite_activityevent_rules/gsuite_mobile_device_suspicious_activity.yml)
+- [GSuite Document External Ownership Transfer](../rules/gsuite_activityevent_rules/gsuite_doc_ownership_transfer.yml)
+- [GSuite Drive Many Documents Deleted](../queries/gsuite_queries/gsuite_drive_many_docs_deleted.yml)
+- [GSuite External Drive Document](../rules/gsuite_reports_rules/gsuite_drive_visibility_change.yml)
+- [GSuite Government Backed Attack](../rules/gsuite_activityevent_rules/gsuite_gov_attack.yml)
+- [GSuite Login Type](../rules/gsuite_activityevent_rules/gsuite_login_type.yml)
+- [Gsuite Mail forwarded to external domain](../rules/gsuite_activityevent_rules/gsuite_external_forwarding.yml)
+- [GSuite Many Docs Deleted Query](../queries/gsuite_queries/GSuite_Many_Docs_Deleted_Query.yml)
+- [GSuite Many Docs Downloaded Query](../queries/gsuite_queries/GSuite_Many_Docs_Downloaded_Query.yml)
+- [GSuite Overly Visible Drive Document](../rules/gsuite_reports_rules/gsuite_drive_overly_visible.yml)
+- [GSuite Passthrough Rule Triggered](../rules/gsuite_activityevent_rules/gsuite_passthrough_rule.yml)
+- [GSuite User Advanced Protection Change](../rules/gsuite_activityevent_rules/gsuite_advanced_protection.yml)
+- [GSuite User Banned from Group](../rules/gsuite_activityevent_rules/gsuite_group_banned_user.yml)
+- [GSuite User Device Compromised](../rules/gsuite_activityevent_rules/gsuite_mobile_device_compromise.yml)
+- [GSuite User Device Unlock Failures](../rules/gsuite_activityevent_rules/gsuite_mobile_device_screen_unlock_fail.yml)
+- [GSuite User Password Leaked](../rules/gsuite_activityevent_rules/gsuite_leaked_password.yml)
+- [GSuite User Suspended](../rules/gsuite_activityevent_rules/gsuite_user_suspended.yml)
+- [GSuite User Two Step Verification Change](../rules/gsuite_activityevent_rules/gsuite_two_step_verification.yml)
+- [GSuite Workspace Calendar External Sharing Setting Change](../rules/gsuite_activityevent_rules/gsuite_workspace_calendar_external_sharing.yml)
+- [GSuite Workspace Data Export Has Been Created](../rules/gsuite_activityevent_rules/gsuite_workspace_data_export_created.yml)
+- [GSuite Workspace Gmail Default Routing Rule Modified](../rules/gsuite_activityevent_rules/gsuite_workspace_gmail_default_routing_rule.yml)
+- [GSuite Workspace Gmail Pre-Delivery Message Scanning Disabled](../rules/gsuite_activityevent_rules/gsuite_workspace_gmail_enhanced_predelivery_scanning.yml)
+- [GSuite Workspace Gmail Security Sandbox Disabled](../rules/gsuite_activityevent_rules/gsuite_workspace_gmail_security_sandbox_disabled.yml)
+- [GSuite Workspace Password Reuse Has Been Enabled](../rules/gsuite_activityevent_rules/gsuite_workspace_password_reuse_enabled.yml)
+- [GSuite Workspace Strong Password Enforcement Has Been Disabled](../rules/gsuite_activityevent_rules/gsuite_workspace_password_enforce_strong_disabled.yml)
+- [GSuite Workspace Trusted Domain Allowlist Modified](../rules/gsuite_activityevent_rules/gsuite_workspace_trusted_domains_allowlist.yml)
+- [Suspicious GSuite Login](../rules/gsuite_activityevent_rules/gsuite_suspicious_logins.yml)
 
-[ GSuite Document External Ownership Transfer](../rules/gsuite_activityevent_rules/gsuite_doc_ownership_transfer.py)
 
-[ GSuite External Drive Document](../rules/gsuite_reports_rules/gsuite_drive_visibility_change.py)
-
-[ GSuite Overly Visible Drive Document](../rules/gsuite_reports_rules/gsuite_drive_overly_visible.py)
-
-## User Specific
-
-[ GSuite Device Suspicious Activity](../rules/gsuite_activityevent_rules/gsuite_mobile_device_suspicious_activity.py)
-
-[ GSuite User Advanced Protection Change](../rules/gsuite_activityevent_rules/gsuite_advanced_protection.py)
-
-[ GSuite User Banned from Group](../rules/gsuite_activityevent_rules/gsuite_group_banned_user.py)
-
-[ GSuite User Device Compromised](../rules/gsuite_activityevent_rules/gsuite_mobile_device_compromise.py)
-
-[ GSuite User Device Unlock Failures](../rules/gsuite_activityevent_rules/gsuite_mobile_device_screen_unlock_fail.py)
-
-[ GSuite User Password Leaked](../rules/gsuite_activityevent_rules/gsuite_leaked_password.py)
-
-[ GSuite User Suspended](../rules/gsuite_activityevent_rules/gsuite_user_suspended.py)
-
-[ GSuite User Two Step Verification Change](../rules/gsuite_activityevent_rules/gsuite_two_step_verification.py)
-
-[ Gsuite Mail forwarded to external domain](../rules/gsuite_activityevent_rules/gsuite_external_forwarding.py)
-
-[ Suspicious GSuite Login](../rules/gsuite_activityevent_rules/gsuite_suspicious_logins.py)
-
-[ GSuite Unapproved Login Type](../rules/gsuite_activityevent_rules/gsuite_login_type.py)
-
-## Account Alerts
-
-[ GSuite Government Backed Attack](../rules/gsuite_activityevent_rules/gsuite_gov_attack.py)
-
-[ GSuite Low Severity Rule Triggered](../rules/gsuite_activityevent_rules/gsuite_low_severity_rule.py)
-
-[ GSuite Medium Severity Rule Triggered](../rules/gsuite_activityevent_rules/gsuite_medium_severity_rule.py)
-
-[ GSuite High Severity Rule Triggered](../rules/gsuite_activityevent_rules/gsuite_high_severity_rule.py)
-
-[ Google Accessed a GSuite Resource](../rules/gsuite_activityevent_rules/gsuite_google_access.py)
