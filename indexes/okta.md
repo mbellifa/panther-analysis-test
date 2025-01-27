@@ -1,27 +1,43 @@
-## Rules
+## Okta
 
-[ Okta MFA Globally Disabled](../rules/okta_rules/okta_admin_disabled_mfa.py)
+- [AWS Console Sign-In NOT PRECEDED BY Okta Redirect](../correlation_rules/aws_console_sign-in_without_okta.yml)
+- [Brute Force By IP](../rules/standard_rules/brute_force_by_ip.yml)
+- [Impossible Travel for Login Action](../rules/standard_rules/impossible_travel_login.yml)
+- [MFA Disabled](../rules/standard_rules/mfa_disabled.yml)
+- [Okta Admin Access Granted](../queries/okta_queries/okta_admin_access_granted.yml)
+- [Okta Admin Role Assigned](../rules/okta_rules/okta_admin_role_assigned.yml)
+- [Okta AiTM Phishing Attempt Blocked by FastPass](../rules/okta_rules/okta_phishing_attempt_blocked_by_fastpass.yml)
+- [Okta API Key Created](../rules/okta_rules/okta_api_key_created.yml)
+- [Okta API Key Revoked](../rules/okta_rules/okta_api_key_revoked.yml)
+- [Okta App Refresh Access Token Reuse](../rules/okta_rules/okta_app_refresh_access_token_reuse.yml)
+- [Okta App Unauthorized Access Attempt](../rules/okta_rules/okta_app_unauthorized_access_attempt.yml)
+- [Okta Cleartext Passwords Extracted via SCIM Application](../rules/okta_rules/okta_password_extraction_via_scim.yml)
+- [Okta Group Admin Role Assigned](../rules/okta_rules/okta_group_admin_role_assigned.yml)
+- [Okta HAR File IOCs](../queries/okta_queries/okta_harfile_iocs.yml)
+- [Okta Identity Provider Created or Modified](../rules/okta_rules/okta_idp_create_modify.yml)
+- [Okta Identity Provider Sign-in](../rules/okta_rules/okta_idp_signin.yml)
+- [Okta Investigate MFA and Password resets](../queries/okta_queries/okta_mfa_password_reset_audit.yml)
+- [Okta Investigate Session ID Activity](../queries/okta_queries/okta_session_id_audit.yml)
+- [Okta Investigate User Activity](../queries/okta_queries/okta_activity_audit.yml)
+- [Okta Login From CrowdStrike Unmanaged Device](../queries/crowdstrike_queries/Okta_Login_From_CrowdStrike_Unmanaged_Device.yml)
+- [Okta Login From CrowdStrike Unmanaged Device (crowdstrike_fdrevent table)](../queries/okta_queries/Okta_Login_From_CrowdStrike_Unmanaged_Device_FDREvent.yml)
+- [Okta MFA Globally Disabled](../rules/okta_rules/okta_admin_disabled_mfa.yml)
+- [Okta New Behaviors Acessing Admin Console](../rules/okta_rules/okta_new_behavior_accessing_admin_console.yml)
+- [Okta Org2Org application created of modified](../rules/okta_rules/okta_org2org_creation_modification.yml)
+- [Okta Password Accessed](../rules/okta_rules/okta_password_accessed.yml)
+- [Okta Potentially Stolen Session](../rules/okta_rules/okta_potentially_stolen_session.yml)
+- [Okta Rate Limits](../rules/okta_rules/okta_rate_limits.yml)
+- [Okta Sign-In from VPN Anonymizer](../rules/okta_rules/okta_anonymizing_vpn_login.yml)
+- [Okta Support Access](../queries/okta_queries/okta_support_access.yml)
+- [Okta Support Access Granted](../rules/okta_rules/okta_account_support_access.yml)
+- [Okta Support Reset Credential](../rules/okta_rules/okta_support_reset.yml)
+- [Okta ThreatInsight Security Threat Detected](../rules/okta_rules/okta_threatinsight_security_threat_detected.yml)
+- [Okta User Account Locked](../rules/okta_rules/okta_user_account_locked.yml)
+- [Okta User MFA Factor Suspend](../rules/okta_rules/okta_user_mfa_factor_suspend.yml)
+- [Okta User MFA Own Reset](../rules/okta_rules/okta_user_mfa_reset.yml)
+- [Okta User MFA Reset All](../rules/okta_rules/okta_user_mfa_reset_all.yml)
+- [Okta User Reported Suspicious Activity](../rules/okta_rules/okta_user_reported_suspicious_activity.yml)
+- [Okta Username Above 52 Characters Security Advisory](../queries/okta_queries/okta_52_char_username_threat_hunt.yml)
+- [Sign In from Rogue State](../rules/standard_rules/sign_in_from_rogue_state.yml)
 
-[ Okta API Key Revoked](../rules/okta_rules/okta_api_key_revoked.py)
 
-[ Geographically Improbable Okta Login](../rules/okta_rules/okta_geo_improbable_access.py)
-
-[ Okta Support Reset Credential](../rules/okta_rules/okta_support_reset.py)
-
-[ Okta Admin Role Assigned](../rules/okta_rules/okta_admin_role_assigned.py)
-
-[ Okta API Key Created](../rules/okta_rules/okta_api_key_created.py)
-
-[ Okta Support Access Granted](../rules/okta_rules/okta_account_support_access.py)
-
-## Investigative Queries
-
-[Session ID Audit ](../queries/okta_queries/okta_session_id_audit.yml)
-
-[MFA and Password Reset Audit ](../queries/okta_queries/okta_mfa_password_reset_audit.yml)
-
-[Admin Access Granted](../queries/okta_queries/okta_admin_access_granted.yml)
-
-[Support Access](../queries/okta_queries/okta_support_access.yml)
-
-[User Activity Audit](../queries/okta_queries/okta_activity_audit.yml)
