@@ -1,6 +1,9 @@
 """
 Analyzes all YAML files in the panther-analysis directory and generates a
-detections-coverage.json file with markdown indexes in the indexes directory
+detections-coverage.json file with markdown indexes in the indexes directory.
+
+IMPORTANT: It's assumed that this script will never write outside of the indexes directory. Breaking this assumption
+could cause an infinite GitHub Actions loop.
 """
 
 import collections, json, hashlib, pathlib, yaml, os, itertools
