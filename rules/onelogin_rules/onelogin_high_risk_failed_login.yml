@@ -35,5 +35,5 @@ Tests:
         "actor_user_id": 123456,
         "actor_user_name": "Bob Cat",
         "user_id": 123456,
-        "user_name": "Bob Cat",
+        "user_name": "Bob Cat"
       }
